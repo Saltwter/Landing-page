@@ -4,12 +4,14 @@ body {
     margin:0;
     display: flex;
     flex-direction: column;
-    font-family: "Roboto";
+    font-family: "Roboto", "Open Sans", sans-serif;
 }
+
+/* SECTION ONE (INCLUDING HEADER) */
 
 .section-one {
     display: flex;
-    height:400px;
+    min-height:400px;
     background-color: #1F2937;
     flex-direction: column;
 }
@@ -21,14 +23,15 @@ body {
 }
 
 .header-logo {
-    font-size: 24px;
+    font-size: 20px;
     color: #F9FAF8;
     padding-left: 200px;
 }
 
-.test {
+.content {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .main {
@@ -57,19 +60,22 @@ button {
     padding-right: 25px;
     padding-top: 5px;
     padding-bottom: 5px;
-    border-radius: 10px;
+    border-radius: 10px; /* Ease border radius */
 }
+
+/* LINKS */
 
 ul {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
-    padding-right: 100px;
+    padding-right: 150px;
 }
 
 a {
     text-decoration: none;
     color: #E5E7EB;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 li {
@@ -80,17 +86,20 @@ li {
     width: 400px;
     height:auto;
     margin-right: 120px;
-    padding:30px
+    padding:30px;
 }
+
+/* SECTION TWO */
 
 .section-two {
     display: flex;
     justify-content: center;
     gap: 20px;
-    height: 350px;
+    min-height: 350px;
+    flex-wrap: wrap;
 }
 
-.s2-header {
+.section-two-header {
     padding: 20px;
     font-size: 36px;
     font-weight: 900;
@@ -106,16 +115,17 @@ li {
     font-weight: 100;
 }
 
-
 img {
     width: 150px;
     height: 150px;
-    border-radius: 10px;
+    border-radius: 10px; /* Ease border radius */
 }
+
+/* SECTION THREE */
 
 .section-three {
     display: flex;
-    height: 400px;
+    min-height: 400px;
     background-color: #E5E7EB;
     justify-content: center;
 }
@@ -129,16 +139,18 @@ img {
     padding: 50px;
 }
 
-.thor {
+.thor { /* Thor by-line in same paragraph */
     font-style: normal;
     font-size: 22px;
     display: flex;
-justify-content: end;
+    justify-content: end;
 }
+
+/* SECTION FOUR (INCLUDING FOOTER) */
 
 .section-four {
     display: flex;
-    height: 300px;
+    min-height: 300px;
     justify-content: space-evenly;
     align-items:center;
 }
@@ -158,9 +170,10 @@ justify-content: end;
     
 }
 
+
 .button-two {
     background-color: #3882F6;
-    box-shadow: none;
+    box-shadow: none; /* Remove shadow on button */
     border-color: #F9FAF8;
 }
 
