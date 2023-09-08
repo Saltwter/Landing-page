@@ -26,6 +26,11 @@ body {
     padding-left: 200px;
 }
 
+.test {
+    display: flex;
+    justify-content: space-between;
+}
+
 .main {
     display: flex;
     flex-direction: column;
@@ -38,7 +43,8 @@ h1 {
     color: #F9FAF8;
 }
 
-.main p {
+.main,
+.main-content {
     width: 430px;
     color: #F9FAF8;
 }
@@ -71,39 +77,63 @@ li {
 }
 
 .header-image {
-    width:400px;
+    width: 400px;
     height:auto;
-    display: flex;
-    align-self: flex-end;
+    margin-right: 120px;
+    padding:30px
 }
 
 .section-two {
     display: flex;
-    height: 200px;
+    justify-content: center;
+    gap: 20px;
+    height: 350px;
+}
+
+.s2-header {
+    padding: 20px;
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+    text-align: center;
+}
+
+.info {
+    max-width: 150px;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 100;
+}
+
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
 }
 
 .section-three {
     display: flex;
-    justify-content: center;
-    height: 300px;
+    height: 400px;
     background-color: #E5E7EB;
-    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.section-three,
 .quote {
+    width: 790px;
     color: #1F2937;
     font-style: italic;
     font-weight: 100;
     font-size: 36px;
-    /* align-items: center; */
     padding: 50px;
 }
 
-.quote-by {
-    font-size: 22px;
+.thor {
     font-style: normal;
-    font-weight: 700;    
+    font-size: 22px;
+    display: flex;
+justify-content: end;
 }
 
 .section-four {
@@ -115,16 +145,23 @@ li {
 
 .action {    
     display: flex;
-    flex-direction: column;
-    /* flex-basis:30%;
-    width: 430px; */
     background-color: #3882F6;
-    padding-left: 50px;
-    padding-right: 500px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    gap: 100px;
+    align-items: center;
+    color: #E5E7EB;
+    font-weight: 100;
+    
 }
 
 .button-two {
     background-color: #3882F6;
+    box-shadow: none;
+    border-color: #F9FAF8;
 }
 
 footer {
